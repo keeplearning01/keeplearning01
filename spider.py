@@ -40,6 +40,7 @@ for url in post_url :
             try:
                 n_like_elem =driver.find_elements(By.CLASS_NAME,'_aacl._aacp._adda._aad3._aad6._aade')
                 n_like = n_like_elem[0].text
+                n_comment = n_like_elem[1].text
                 find=True
             except:
                 break
