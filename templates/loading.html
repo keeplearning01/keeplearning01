@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Loading...</title>
+    <link rel="icon" href="{{ url_for('static',filename='img/shadow.ico') }}">
+  </head>
+  <body>
+    <h1>Loading...</h1>
+    <div class="spinner"></div>
+
+    <form id="result-form" action="/get_result">
+      <input type="hidden" name="input_data" value="{{ input_data }}">
+    </form>
+
+    <script>
+      document.getElementById('result-form').submit();
+    </script>
+  </body>
+</html>
